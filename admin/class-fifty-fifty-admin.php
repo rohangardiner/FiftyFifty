@@ -55,8 +55,8 @@ class Fifty_Fifty_Admin
 		$this->version = $version;
 
 		// Settings page
-		add_action('admin_menu', array($admin_instance, 'add_settings_page'));
-		add_action('admin_init', array($admin_instance, 'register_settings'));
+		add_action('admin_menu', array($this, 'add_settings_page'));
+		add_action('admin_init', array($this, 'register_settings'));
 	}
 
 	/**
